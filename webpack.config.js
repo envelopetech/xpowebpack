@@ -36,7 +36,6 @@ var config = {
     }),
     new HtmlWebPackPlugin({
       cache: true,
-      hash:true,
       template: "public/index.html",
       favicon: 'public/favicon_io/favicon.ico'
     }),
