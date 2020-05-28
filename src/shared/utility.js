@@ -893,4 +893,4 @@ export const ReactGoogleAnalytics = () => {
         ReactGA.initialize("UA-40213864-2"); 
         ReactGA.pageview(window.location.pathname + window.location.search); 
 }
-export const GTM_ID = 'GTM-TDF9BDW'//process.env.REACT_APP_GTM_ID
+export const GTM_ID = process.env.REACT_APP_GTM_ID

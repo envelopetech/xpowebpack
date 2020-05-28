@@ -7,6 +7,7 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 var publicUrl = './public';
 var config = {
@@ -21,12 +22,21 @@ var config = {
     chunkFilename: "chunk.js"
   },
   plugins: [
+    new Dotenv({
+      path: './.env', // load this now instead of the ones in '.env'
+      safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
+      allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
+      systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
+      silent: true, // hide any errors
+      defaults: false // load '.env.defaults' as the default values if empty.
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css",
       chunkFilename: "[id].[hash].css",
     }),
     new HtmlWebPackPlugin({
       cache: true,
+      hash:true,
       template: "public/index.html",
       favicon: 'public/favicon_io/favicon.ico'
     }),
