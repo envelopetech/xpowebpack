@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import * as classshared from './classConst';
+import * as classshared from './classconst';
 import socket from './socket'; 
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
   componentDidMount() {
     this.state.client.test();
   }
-  
+
 
 
   render() {
