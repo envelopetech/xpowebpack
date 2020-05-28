@@ -29,9 +29,14 @@ var config={
             // You can pass any key-value pairs, this was just an example.
             // WHATEVER: 42 will replace %WHATEVER% with 42 in index.html.
           }),
-          new CompressionPlugin({
+          new CompressionPlugin({  
+            filename: '[path].gz[query]',
+            test: /\.js(\?.*)?$/i,
             algorithm: 'gzip',
-          }),
+            threshold: 10240,
+            minRatio: 0.8,
+            cache: true
+          })
           
       ],  
     resolve: {   

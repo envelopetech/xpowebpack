@@ -36,7 +36,12 @@ const PORT = process.env.PORT || 3000;
 // });  
 // app.get('/api',function(req,res){  
 //     res.send('<p>This is a api Data</p>');  
-// });  
+// });
+app.get('*.js', function (req, res, next) {
+    req.url = req.url + '.gz';
+    res.set('Content-Encoding', 'gzip');
+    next();
+  });  
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath
