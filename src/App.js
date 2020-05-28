@@ -1,10 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import * as classshared from './classconst';
+import React, { Suspense } from 'react';
+import { Router } from 'react-router';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from './store/actions/index';
+import { createBrowserHistory } from 'history';
 import socket from './socket'; 
+import Auth from './containers/Auth/Auth'
+const history = createBrowserHistory();
+
+
+
+
 
 class App extends React.Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -14,32 +23,29 @@ class App extends React.Component {
 
   componentDidMount() {
     this.state.client.test();
+    this.props.onTryAutoSignup();
   }
-
-
-
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p className={classshared.test}>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Suspense fallback={<p>...</p>}>
+        <Router history={history}>
+          <Switch>
+            <Route exact path="/" component={Auth}></Route>
+           }
+          </Switch>
+        </Router>
+      </Suspense>
     );
   }
-
-
 }
-
-export default App;
+const mapStateToProps = state => {
+  return {
+    isAuthenticated: state.auth.token !== null
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    onTryAutoSignup: () => dispatch(actions.authCheckState())
+  };
+};
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

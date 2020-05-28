@@ -1,0 +1,147 @@
+.column {
+  flex-direction: column;
+}
+
+.login_content {
+  position: relative;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.center{
+  text-align: center;
+}
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.login_content_right {
+  padding-left: 35px;
+  max-height: 370px;
+}
+
+.vertical_seperator {
+  color: #e9e9e9;
+  width: 1px;
+  height: 50px;
+}
+
+.login_content_left {
+  border-right: 1px solid #e9e9e9;
+  max-height: 370px;
+}
+
+.login_content__main {
+  margin: 50px 0px;
+}
+.social_buttons {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.anchorremoveline
+{
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.anchorremoveline:link {
+  color: #8e54e9 !important;
+}
+
+/* visited link */
+.anchorremoveline:visited {
+  color: #8e54e9 !important;
+}
+
+.verticalalignbottom
+{
+  vertical-align: bottom;
+}
+.cursorpointer
+{
+  cursor: pointer;
+}
+
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn__facebook {
+  background-color: rgb(66, 133, 244);
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn__facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn__facebook:hover,
+.loginBtn__facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn__google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginBtn__google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn__google:hover,
+.loginBtn__google:focus {
+  background: #E74B37;
+}
+
+.label_checkbox {    
+  
+  font-family: inherit;
+  color: #aaa;
+  font-size: 15px;  
+  background: transparent;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 768px) {
+  .login_content_left {
+    border-right: none;
+    margin-top: 25px;
+  }
+}
