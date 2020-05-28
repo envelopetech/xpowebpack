@@ -113,6 +113,9 @@ class Auth extends Component {
         this.setState({ islogin: false, signuptext: "Sign Up", signupsubtext: "Already have an account?" })
     }
     render() {
+
+        console.log(process.env.NODE_ENV.REACT_APP_GTM_ID); 
+        console.log(process.env.NODE_ENV.REACT_APP_OWN_URL);
         
         const { classes } = this.props;
         const responseFacebook = (response) => {
