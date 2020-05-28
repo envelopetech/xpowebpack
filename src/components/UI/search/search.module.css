@@ -1,0 +1,95 @@
+.search {
+  /* flex: 0 0 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; */
+  display:flex;
+    flex: 0 0 84%;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: 14px;
+    color:inherit;
+    background-color: #f4f2f2;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all .2s;
+    margin-right: -50px;
+  }
+
+  .search__input.search__input_50 {    
+    width: 50%;   
+  }
+
+  .search__input.search__input_50:focus {
+    outline: none;
+    width: 60%;
+    background-color: #f0eeee;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    width: 100%;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::placeholder{
+    font-weight:100;
+    color: #ccc;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee
+  }
+  .search__button:focus {
+    outline:none;
+  }
+  
+  .search__button:active {
+    transform: translateY(2px);
+  }
+  
+  .search__icon {
+    height: 20px;
+    width: 20px;
+    fill: #999;
+  }
+
+
+ 
+
+  .react-select__control {
+    font-family: inherit;
+    font-size: 14px ;
+    color: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -50px;
+  }
+  .react-select__menu {
+    
+    background-color: #fff;
+    border: none;
+    margin: 2px 5px;  
+    width: 88%;
+    
+    
+  }
+  @media screen and (max-width: 768px) {
+    .search {
+        margin: 5px;
+      }
+  }

@@ -1,0 +1,473 @@
+.btn {
+  background-color: #222; 
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;  
+  cursor: pointer;      
+  letter-spacing: 1px;
+  align-items: center;   
+  border-radius: 5px;
+  outline: none;
+}
+.btn_outline{
+    background-color: transparent;     
+    color: #8e54e9 !important; 
+    border: 2px solid #8e54e9;
+    padding: 10px 15px;
+    outline: none;  
+    display: block !important;  
+}
+.btn_outline.green{    
+    color: #17b978; 
+    border: 2px solid #17b978;   
+}
+.btn_outline.grey{    
+    background: transparent;
+    border: 1px solid gray;
+    color: gray !important;   
+}
+.btn_outline.blue{    
+    background-color: transparent;
+    border: 1px solid #304ffe;
+    color: #304ffe !important;
+    /* border-radius: unset; */
+}
+
+.btn_outline:global(#isdisabledtrue) {
+    opacity: 0.3; 
+    cursor: not-allowed;
+}
+
+.btn_outline.blue:hover{   
+    border:1px solid #304ffe;
+}
+.btn_outline.grey:hover{
+    background-color:black;
+    border: 1px solid black;
+    color: #fff !important;
+    fill: #fff !important
+}
+.btn_outline:hover{
+    background-color: transparent ;
+    color: #8e54e9;
+  }
+.btn_outline.btnsmall{   
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+}
+.tags {
+    display: inline-flex;
+    align-items: center;
+    color: #222;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 5px 20px;
+    white-space: nowrap;
+    border-radius: 12px;
+    margin-right: 10px;
+    border: none;    
+    background:#e8e7e7
+}
+.tags:hover{
+    cursor: pointer;
+    background-color:#dbd9d9;
+    color: #222;
+    opacity: 1;  
+}
+.edit_btn {  
+    padding: 3px 5px;
+    float: right;
+    background-color: transparent;
+    font-family: 'Fa solid 900', sans-serif;
+    color: #094dba;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+  }
+  .tieup_btn {       
+    /* display: flex;    
+    padding-top:3%;          
+    padding-bottom:3%;              
+    background:none!important;
+    color:inherit;
+    border:none; 
+    color: #8e54e9;    */
+    /* color: #304ffe;   */
+    /* cursor: pointer;
+    outline: none;
+    width:100%;    
+    justify-content: center; */
+    width: 100%;   
+    padding: 13px 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 50px;
+    border: 1px solid #e9ebee;    
+    background: none!important; 
+    color: #5432d3;    
+    outline: none;
+  }
+.tieup_btn:hover {        
+    background-image:none !important;
+    background-color:#5432d3  !important;    
+    color: white;
+}
+.btneditprofile_small{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: #d0d6f7; */
+    /* background-color: #c5cdf7; */
+    /* background-color:#304ffe; */
+    background-color:#304ffe;
+    border: none;
+    color:#304ffe;
+}
+.btneditprofile_small:hover{
+    background-color:#304ffe ;
+    /* background-color:#304ffe; */
+    color:#304ffe;
+    cursor: pointer;
+}
+.btnuserpostmore{
+    /* width: 30px;
+    height: 30px;
+    border-radius: 50%;    
+    background-color:#ffffff;
+    border: none;
+    border: 1px solid #F0F0F7;
+    outline: none; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #F0F0F7; 
+    outline: none;
+}
+.btnclose_popup
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;    
+    border: none;
+    cursor: pointer; 
+    background: transparent; 
+    outline: none;  
+}
+.btn_action {
+    /* padding: 9px 15px;
+    background-color:transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex;
+    cursor: pointer; */
+    padding: 10px 15px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    /* border-radius: 100px; */
+    display: flex;
+    align-items: flex;
+    cursor: pointer;
+    letter-spacing: 2px;
+    align-items: center;   
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn_action:hover{
+    border:2px solid #304ffe;
+}
+.btn_action_delete_edit {
+    padding: 10px 5px;    
+    display: flex;
+    align-items: flex;
+    cursor: pointer;    
+    color:inherit;
+    border:none;     
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    background-color: #fff;
+    text-decoration: none;
+}
+.btn_action_delete_edit.padding15px {
+    padding: 10px 15px !important;
+}
+.btn_action_delete_edit:hover{
+    background-color: #ddd;
+    outline:none;
+}
+.btn_action_delete_edit.btn_sharecomment_like_post {    
+    background-color: transparent;
+    padding:0px !important;  
+}
+.btn_user_post {
+    background-color: #222; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    font-size:12px;
+ }
+ .btn_user_post.disabled {
+    opacity: 0.3; 
+    cursor: not-allowed;
+  }
+  .btn_user_post_cancel {
+    background-color: #646262; 
+    border: none;
+    color: #ecf0f3;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    font-size:12px;
+ }
+ .nav_item_notifications_show_all {
+    color: #fff !important;
+    background-color: #448aff !important;
+}
+.nav_item_notifications_show_all:hover {
+    background-color: #3d7ce5 !important;
+}
+.dropdown_secondary {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    border-top: 1px solid #e9ebee;
+    width: 100%;
+}
+.user_profile_streamline_photo{        
+    border: 1px solid #ccc;        
+    color: #222;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;    
+    align-items: center;   
+  }
+  .user_profile_streamline_photo:hover{    
+    background-color:#222;
+    color: white; 
+  }
+  .gradient_button {
+    margin: 15px 0px;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px 35px;
+    text-align: center;
+    transition: 0.5s;
+    color: #FFF;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    border: none;
+    outline: none; 
+}
+.gradient_button:hover{
+    box-shadow: 0 10px 20px rgba(84, 50, 211, .16), 0 6px 6px rgba(84, 50, 211, .23);
+}
+.gradient_button_1 {background-image: linear-gradient(to right, #251FFB 0%, #8E54E9 100%)}
+.signuploginlink{    
+    background: none!important;
+    color: inherit;
+    border: none;
+    color: #448aff;
+    cursor: pointer;
+    outline: none;    
+    justify-content: center;
+    font-weight: 700;
+}
+.gradient_button_2 {    
+    color: #fff;
+    background-color: rgba(37, 31, 251, 1);
+    border: 1px solid #251ffb;
+}
+.gradient_button_2:hover {
+    background-color: #251ffb;
+    color: #fff;
+}
+.btn_yellow {
+    background-color: #facd49;
+}
+.btn_purple {    
+    background-color: #7b6cf6;
+    border: 2px solid #7b6cf6;
+    padding: 9px 15px;
+}
+.btn_purple:hover{
+    background-color:#4a409e;
+    border: 2px solid #4a409e;
+    color: #fff;
+}
+.btn_blue {
+    background-color: #304ffe;
+    border: none !important;
+    /* border-radius: unset; */
+    display: inline !important;    
+}
+.btn_outline__pink {
+    background: #f85e9f;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+.btn_outline__pink:hover{
+    background: #f18fac;
+    cursor: pointer;
+}
+.btn_follow {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: none;
+    margin-top: 30px;
+    font-size: 1.0rem;
+    font-weight: 700;
+    transition: 0.2s;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    letter-spacing: 2px;
+}
+.btn_follow_red {
+    background: rgba(255,101,101,0.1);
+    color: rgba(255,101,101,1);
+}
+.btn_follow_red:hover {
+    color: #fff;
+    background: #F72828;
+}
+.btn_red_italic
+{
+    font-weight: 700;
+    font-style: italic;
+    background-color: transparent;
+    color: #FF6565;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    /* padding: 9px 15px; */
+    /* background-color: transparent; */
+    /* border: none; */
+    /* border-radius: 4px; */
+    /* display: flex; */
+    align-items: flex;
+    outline: none;
+    cursor: pointer;
+}
+.btn_red_italic::after {
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    margin-left: 4px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+}
+.btn_green {        
+    background: #17b978;    
+    cursor: pointer;
+}
+.btn_green:hover {        
+    background: #17b978;
+}
+.btn_red {
+    font-size: 0.7rem;
+    background: indianred;
+    border: 2px solid indianred;
+    cursor: pointer;
+}
+.btn_red:hover {
+    color: #fff;
+    background: #222;
+    border: 2px solid #222;
+}
+.btn_grey {    
+    background-color:gray;
+    border: 2px solid gray;
+    cursor: pointer;
+    padding : 8px 10px;
+}
+.btn_blue_light {    
+    background-color:#448aff ;
+    border: 2px solid #448aff ;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+.btn_grey:hover {
+    color: #fff;
+    background: #222;
+    border: 2px solid #222;
+}
+.dot {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+  }
+  .dot_red {
+      background-color: red;
+  }
+  .dot_green {
+      background-color: green;
+  }
+  .round_button {
+      border: none;
+      padding: 12px;
+      outline: none;
+      position: relative;
+      top: 0px;
+      transition: top ease 0.5s;
+  }
+  .round_button:hover {
+      cursor: pointer;
+      top: -10px;
+  }
+  .disabled {
+    opacity: 0.3; 
+    cursor: not-allowed;
+  }
+  .backbutton{
+    padding: 10px 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex;
+    cursor: pointer;
+    color: #2e61d2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 100%;    
+    text-decoration: none;
+  }

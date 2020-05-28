@@ -1,0 +1,30 @@
+.sidebar__user {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:15px;
+}
+.sidebar {
+  flex-grow: 1;
+    overflow-y: auto;
+    background: #FFF;
+}
+.sidebar__user_photo {
+  position: relative;
+  /* padding: 10px; */
+}
+.verticalalignsuper{
+  vertical-align: super;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin-top: -80px;
+}  
+  .sidebar__user_photo {
+    z-index: 99;
+  }    
+  
+    
+}

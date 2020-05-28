@@ -1,1 +1,227 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="manifest.json"><title>Xporium</title></head><body><div id="root"></div><script src="/bundle.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="./favicon_io/favicon.ico">    
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Poppins:400,600,700,700i" rel="stylesheet">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU2cXbrr6e4iZEvb9laI30zNCTifLGMGE&libraries=places"></script>  
+  <script src="https://kit.fontawesome.com/f2fc5733b8.js" crossorigin="anonymous"></script>
+  
+  <style>
+    #root {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      box-sizing: border-box;
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 0;
+      transition: padding-bottom .25s ease;
+      width: 100%;
+      
+    }
+    :root{
+      font-size: 62.5%;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+      width: 9px;
+      background-color: #F5F5F5;
+    }
+
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: linear-gradient(left, #fff, #e4e4e4);
+      border: 1px solid #aaa;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #fff;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background: linear-gradient(left, #22ADD4, #1E98BA);
+    }
+
+    .react-loading-skeleton {
+      animation: progress 1.2s ease-in-out infinite;
+      /* background-color: #eee; */
+      background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+      background-size: 200px 100%;
+      background-repeat: no-repeat;
+      /* border-radius: 4px; */
+      /* display: inline-block; */
+      /* line-height: 1; */
+      /* width: 100%; */
+    }
+
+    .react-select__control {
+      font-family: inherit;
+      font-size: 14px;
+      color: inherit;
+      background-color: #f4f2f2 !important;
+      border: none !important;
+      padding: 10px 25px;
+      border-radius: 100px !important;
+      width: 90%;
+      transition: all 0.2s !important;
+      margin-right: -50px;
+    }
+
+    .react-select__menu {
+
+      background-color: #fff !important;
+      border: none !important;
+      margin: 2px 5px !important;
+      width: 88% !important;
+    }
+
+    .react-select__multi-value__label {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-stretch: normal;
+      font-weight: 400;
+      font-size: 13px !important;
+      line-height: 1.5;
+      text-transform: capitalize;
+    }
+
+    .ui.radio.checkbox {
+      min-height: 15px;
+    }
+
+    .ui.checkbox {
+      position: relative;
+      display: inline-block;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      outline: 0;
+      vertical-align: baseline;
+      font-style: normal;
+      min-height: 17px;
+      font-size: 1rem;
+      line-height: 17px;
+      min-width: 17px;
+    }
+
+    .ui.radio.checkbox label {
+      padding-left: 1.85714em;
+    }
+
+    .ui.checkbox input[type=checkbox],
+    .ui.checkbox input[type=radio] {
+      cursor: pointer;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      outline: 0;
+      z-index: 999;
+      width: 17px;
+      height: 17px;
+    }
+
+    .OTPublisherContainer {
+      width: 40vh !important;
+      height: 40vh !important;
+    }
+    body.privacypolicy
+    {
+    overflow: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      #root {
+        display: block;
+        overflow-y: auto;
+      }
+
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    .intercom-lightweight-app-launcher {   
+      bottom: 10px !important;
+    right: 5px !important;
+    width: 40px !important;
+    height: 40px!important;
+    }
+    .intercom-lightweight-app-launcher-icon-open svg {
+    width: 20px !important;
+    height: 24px !important;
+    }
+    .intercom-lightweight-app-launcher-icon {    
+      width: 40px !important;
+      height: 40px!important;
+    
+    }  
+    }
+  </style>
+  <title>Xporium</title>
+  <!-- <script>
+    window.intercomSettings = {
+      app_id: "awgmsv98"       
+  };
+  </script>
+    <script type="text/javascript">
+      var APP_ID = "awgmsv98";
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script> -->
+</head>
+
+<body id="bodycontainer">
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+<!-- <script>
+  window.intercomSettings = {
+    app_id: "awgmsv98",
+    name:"Hetal Mehta",
+    email:"hetu.upadhyay@gmail.com",
+    user_id:"72e3d41b-ed8b-4e7b-be07-69599400d37a"    
+};
+</script>-->
+<!-- <script>
+  window.intercomSettings = {
+    app_id: "awgmsv98"       
+};
+</script>
+<script>
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/awgmsv98' ;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>  -->
+<!-- <script>
+  if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+  </script> -->
+</html>

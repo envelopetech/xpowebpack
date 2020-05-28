@@ -28,7 +28,7 @@ var config = {
     new HtmlWebPackPlugin({
       cache: true,
       template: "public/index.html",
-      favicon: 'public/favicon.ico'
+      favicon: 'public/favicon_io/favicon.ico'
     }),
     new ManifestPlugin(),
     new InterpolateHtmlPlugin(HtmlWebPackPlugin, {

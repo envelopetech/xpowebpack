@@ -1,0 +1,78 @@
+
+
+.Input {
+    width: 100%;
+    /* padding: 15px;
+    box-sizing: border-box; */
+}
+
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.text_field {
+    width: 600px;
+    padding-left: 0px;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color:#ffbf00;
+    font-family: 'Lora Italic', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .text_field_small {    
+    padding-left: 0px;    
+    font-family: 'Lora Italic', sans-serif;
+    font-style: italic;
+    font-size: 12px;    
+  }
+
+  .inputfullwidth{
+      width:100%;
+  }
+  .richtext_field {
+    width: 70%;
+    padding-left: 0px;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color:#ffbf00;
+    font-family: 'Lora Italic', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    min-height: 200px;
+  }
+.InputElement {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-style: none none solid;
+    border-color: #e9e9f0;
+    border-bottom-width: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #43425d;
+    font-size: 15px;
+    width:100%;
+}
+
+
+
+.input_box {
+    margin-bottom: 0px;
+    padding: 25px 20px;
+    border: 1px solid #e8e9ec;
+    border-radius: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #a4afb7;
+    font-size: 13px;
+    letter-spacing: 0px;
+  }
+
+.Invalid {
+    border: 1px solid red;
+    background-color: #FDA49A;
+}
+
+
+  
