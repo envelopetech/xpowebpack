@@ -5,6 +5,7 @@ var distPath=path.resolve(__dirname,"build");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 var ManifestPlugin = require('webpack-manifest-plugin');
 var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 var publicUrl = './public';
 var config={  
@@ -28,7 +29,9 @@ var config={
             // You can pass any key-value pairs, this was just an example.
             // WHATEVER: 42 will replace %WHATEVER% with 42 in index.html.
           }),
-          
+          new CompressionPlugin({
+            algorithm: 'gzip',
+          }),
           
       ],  
     resolve: {   
