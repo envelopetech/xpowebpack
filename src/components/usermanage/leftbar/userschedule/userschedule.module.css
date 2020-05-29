@@ -1,0 +1,221 @@
+.calendar {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+  }  
+  .calendar .header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 115%;
+    padding: 1.5em 0;
+  }  
+  .calendar .header .icon {
+    cursor: pointer;
+    transition: .15s ease-out;
+  }  
+  .calendar .header .icon:hover {
+    transform: scale(1.75);
+    transition: .25s ease-out;
+    color: #448aff;
+  } 
+  .calendar .header .icon:first-of-type {
+    margin-left: 1em;
+  }  
+  .calendar .header .icon:last-of-type {
+    margin-right: 1em;
+  }  
+  .calendar .days {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #ccc;
+    font-size: 70%;
+    padding: .75em 0;
+    border-bottom: 1px solid #eee;
+  }  
+  .calendar .body .cell {
+    position: relative;
+    height: 3em;
+    border-right: 1px solid #eee;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.25s ease-out;
+    width: 5%;
+  }  
+  .calendar .body .cell:hover {
+    background: #eee;
+    transition: 0.5s ease-out;
+  }  
+  .calendar .body .selected {
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(45deg, #1a8fff 0%,#53cbf1 40%);
+    border-image-slice: 1;
+  }
+  .calendar .body .row {
+    border-bottom: 1px solid #eee;
+  }  
+  .calendar .body .row:last-child {
+    border-bottom: none;;
+  }  
+  .calendar .body .cell:last-child {
+    border-right: none;
+  }  
+  .calendar .body .cell .number {
+    position: absolute;
+    font-size: 82.5%;
+    line-height: 1;
+    top: .75em;
+    right: .75em;
+    font-weight: 700;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 99%;
+  }
+  .col {
+    flex-grow: 1;
+    /* flex-basis: 0; */
+    max-width: 100%;
+  }
+  
+  .col_start {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .col_center {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .col_end {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .calendar_content {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  .border_bottom {
+    border-bottom: 2px solid #ccc;
+    border-top: none;
+  }
+  .calendar_header__sticky {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #fff;
+  }
+  .slots {
+    min-width: 99%;
+  }
+  .time{
+    height: auto;
+    min-width: 40px;
+    overflow: hidden;
+  }
+  .numbers {
+    font-size: 11px;
+    height: 49px;
+    padding-right: 8px;
+    text-align: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color:black;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+  .title_numbers {
+    font-size: 11px;
+    height: 49px;
+    padding-right: 8px;
+    text-align: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color:black;
+  }
+.day {
+    font-size: 13px;
+}
+.bookings {
+    height: 100%;
+    background: pink;
+    border: 1px solid #FF1493;
+    color: white;
+}
+.suggestion_card{
+    border:1px solid #e9ebee;
+    position: relative;
+    cursor: pointer;
+    transition: all .15s ease;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 11px -1px #e9ebee;    
+  }
+.suggestion_card:hover {
+    box-shadow: 0 6px 11px -1px #e9ebee;
+}
+.height_auto {
+    height: auto !important;
+}
+.edit {
+    /* position: absolute;*/
+    z-index: 2;
+}
+.edit a {
+    color: #fff;
+}
+.shadow_dark {
+    box-shadow: 0 20px 60px rgba(0,0,0,.3);
+} 
+.column {
+    height: 100%;  /*allows both columns to span the full height of the browser window*/
+    display: flex;
+    flex-direction: column;  /*places the left and right headers above the bottom content*/
+}
+.avatars {
+  display: inline-flex;
+  flex-direction: row;
+  margin-right:5px;
+}
+.search__icon {
+  height: 20px;
+  width: 20px;
+  fill: #999;
+}
+div[disabled]
+{  
+  cursor: none;
+  opacity: 0.4;  
+}
+.redonlycell{
+  background: #d2cfcf !important;
+}
+.cursornone{
+  cursor: none !important;
+}
+@media screen and (max-width: 768px) {
+  .numbers {    
+    height: 43px;    
+  }
+  .row{
+    width: 90%;
+  }
+}
+  
+  

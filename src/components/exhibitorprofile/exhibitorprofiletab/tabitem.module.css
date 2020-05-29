@@ -1,0 +1,78 @@
+.column {
+  flex-direction: column;
+}
+.react_tabs {
+  -webkit-tap-highlight-color: transparent;
+  /* border-top: 1px solid #e9e9f0; */
+}
+.react_tabs__tab_exhibitor {
+  display: inline-block;            
+    border-right: 1px solid #ddd !important;
+    width: 20%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #808495;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.react_tabs__tab_exhibitor:focus {    
+  border-bottom: 2px solid #facd49;
+  background-color: #edf0f5;
+  color: #000;
+  outline: none;
+}
+.react_tabs__tab_exhibitor__selected {    
+  color: #5d50c6;
+    background-color: rgba(93,80,198,.2);
+    border-bottom: 3px solid #facd49;   
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s;
+}
+.react_tabs__tab_exhibitor__list{
+  border-bottom: 2px solid #e9e9f0;
+  margin: 1% 0 1%;
+  padding: 0;
+  /* width: 95%; */
+  background-color: #F0F0F7;
+}
+@media screen and (max-width: 768px) {
+
+  .react_tabs__tab_exhibitor__list {
+    border-bottom: 2px solid #e9e9f0;
+    margin: 0% 0 4%;   
+  }
+  .react_tabs__tab_exhibitor {
+    display: inline-block;
+    border-bottom: none;
+    bottom: -1px;
+    list-style: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #808495;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 14px;
+  }
+  .react_tabs__tab_exhibitor__selected {        
+    border-bottom: 3px solid #facd49;       
+    color:#5d50c6;
+    text-align: center
+  }  
+  .react_tabs__tab_exhibitor:focus {    
+    border-bottom: 3px solid #facd49;
+    background-color: #edf0f5;
+    color: #000;
+    outline: none;
+  }
+}

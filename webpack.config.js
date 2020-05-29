@@ -34,7 +34,7 @@ var config = {
       filename: "[name].[hash].css",
       chunkFilename: "[id].[hash].css",
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebPackPlugin({      
       cache: true,
       template: "public/index.html",
       favicon: 'public/favicon_io/favicon.ico'
@@ -128,5 +128,4 @@ var config = {
     writeToDisk: true,
   }
 }
-
 module.exports = config; 

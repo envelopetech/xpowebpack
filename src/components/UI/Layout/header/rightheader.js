@@ -196,7 +196,7 @@ class rightheader extends Component {
         }
         return (
             <React.Fragment>
-            <GoogleTagManager gtmId={GTM_ID} />
+           
                 <Modal open={this.state.opencallpopup} styles={customPopUp}
                     onClose={this.closepopup} center showCloseIcon={false}>
                     <Usercallpopupsender
@@ -335,6 +335,7 @@ class rightheader extends Component {
                             null
                         )
                 }
+                 <GoogleTagManager gtmId={GTM_ID} />
             </React.Fragment>
         )
     }

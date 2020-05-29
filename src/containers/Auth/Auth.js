@@ -14,6 +14,7 @@ import GoogleButton from 'react-google-button'
 import { withStyles } from '@material-ui/styles';
 import { flex } from '../../components/commoncss/classconst';
 import GoogleTagManager from '../../shared/GoogleTagManager'
+import socket from '../../socket'; 
 
 const styles = {
     loginContentMain: {
@@ -58,13 +59,16 @@ class Auth extends Component {
         errormessage: '',
         signuptext: "Login",
         signupsubtext: "New to Xporium?",
-        is_social_login: false
+        is_social_login: false,
+        client: socket()
     }
     componentDidMount() {
+        this.state.client.test();
         ReactGoogleAnalytics()
         document.body.classList.add('privacypolicy');
     }
     submit = (values) => {
+        debugger;
         const authData = {
             email: values.email,
             password: values.password,

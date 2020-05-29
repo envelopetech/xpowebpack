@@ -8,7 +8,7 @@ if (localStorage.getItem('userId') != null) {
     userid = base64.encode(bytes);
 }
 const instance = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: process.env.REACT_APP_API_URL,
     headers: {
         Authorization: localStorage.getItem('token') == null ? null : localStorage.getItem('token') + "##" + userid,
         //'Access-Control-Allow-Origin': '*',

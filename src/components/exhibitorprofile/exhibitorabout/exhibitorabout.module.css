@@ -1,0 +1,29 @@
+.editable {
+    opacity: 1;
+}
+
+.letter_spacing {
+    letter-spacing: 2px; 
+}
+
+.column {
+    flex-direction: column;
+}
+
+.dropdown {
+    height: 10%;
+    margin-bottom: 0px;
+    padding: 15px 20px;
+    border: 1px solid #5748c5;
+    border-radius: 4px;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(270deg, #fff, #fff);
+    background-image: linear-gradient(180deg, #fff, #fff);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #a4afb7;
+    font-size: 13px;
+  }
+  
+  .dropdown:active {
+    color: #000;
+  }

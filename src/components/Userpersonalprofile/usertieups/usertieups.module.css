@@ -1,0 +1,30 @@
+.main__hero_tieups{
+    display:flex;
+    align-items: center;
+    /* position: absolute;
+    right:30px;
+    bottom:20px; */
+    height: 40px;
+    position: relative !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    margin: 15px 15px !important;
+  }
+
+.main__hero_tieups_left {
+    height: 40px;
+}
+
+
+.avatars {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin-right:5px;
+    margin-top: 5px;
+  }
+  .main__hero_tieups_right {
+    border-left: 1px solid lightgray;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+  }

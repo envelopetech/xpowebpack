@@ -1,8 +1,8 @@
 import base64 from 'base-64';
 import utf8 from 'utf8';
 import moment from 'moment';
-//import { confirmAlert } from 'react-confirm-alert'; // Import
-//import DeleteConfirmation from '../components/UI/Deleteconfirmation/deleteconfirmation'
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import DeleteConfirmation from '../components/UI/Deleteconfirmation/deleteconfirmation'
 import React from 'react';
 import ReactGA from "react-ga";
 
@@ -12,7 +12,7 @@ export const updateObject = (oldObject, updatedProperties) => {
         ...updatedProperties
     };
 };
-export const socketendpoint = "http://localhost:5000"
+export const socketendpoint = "http://localhost:3000"
 //export const socketendpoint = "https://xpotest.herokuapp.com"
 //export const filestackclientid = "A6UvEfkFeSq2d6TdR9OROz";
 export const filestackclientid = "AsBC0mi3ETPevaVD62Xhwz";
@@ -869,15 +869,15 @@ export const getcalltype = (calltype) => {
     }
     return strreturn;
 }
-// export const confirmdelete = (eventhandler) => {
-//     return confirmAlert({
-//         customUI: ({ onClose }) => {
-//             return (
-//                 <DeleteConfirmation onClose={onClose} deletedataconfirmation={eventhandler} />
-//             );
-//         },
-//     });
-// }
+export const confirmdelete = (eventhandler) => {
+    return confirmAlert({
+        customUI: ({ onClose }) => {
+            return (
+                <DeleteConfirmation onClose={onClose} deletedataconfirmation={eventhandler} />
+            );
+        },
+    });
+}
 
 
 export const url_validation = value =>

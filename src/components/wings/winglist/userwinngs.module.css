@@ -1,0 +1,144 @@
+.wing__card{
+    max-width: 750px;
+}
+.wing__card_upper {
+    display: flex;
+    align-items: flex-start;
+    background: #FFF;
+    padding:20px;
+    border: 1px solid #F0F0F7;
+    border-bottom: none;
+    margin-bottom: none;
+    position: relative;
+    justify-content: space-between;
+    
+}
+
+.wing__card__bottom {
+    background: #FFF;
+    padding: 20px;
+    border: 1px solid #f0f0f7;
+}
+.wing_card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 25px;
+}
+.wing_details_micro {
+    display: flex;
+    
+}
+
+.avatar_l {
+    margin-left: -15px;
+    position: relative;
+    border:1px solid #fff;
+    border-radius: 50%;
+    overflow:hidden;
+    width:40px;
+    height:40px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .avatar_m {
+    width:25px !important;
+    height:25px !important;
+  }
+
+  .members_count_round {
+    margin-left: -20px;
+    position: relative;
+    border:1px solid #fff;
+    border-radius: 50%;
+    overflow:hidden;
+    width:40px;
+    height:40px;
+    background-position: center center;
+    background-size: cover;
+    background: #304ffe;
+    cursor: pointer;
+}
+.members_count_fig {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.wing_status {
+    margin-left: 30px;
+}
+.wing__stats_numbers {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wing__stats_number {
+    margin-right: 20px;
+}
+
+.wing__stats_fig {
+    display:flex;
+}
+.wing__card_btn_wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.wing__card_curator{
+    display: flex;
+    align-items: center;
+}
+.wing_card_curator_details {
+    margin-right: 8px;
+}
+.wing__card_buttons {
+    display: flex;
+}
+.avatars {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .wing__card_upper{
+        display: block;
+    }
+    .wing_card_content
+    {
+        text-align: center;
+        display: block;
+        padding: 0;
+    }
+    .wing_details_micro
+    {
+        justify-content: center;
+    }
+    .wing__stats_number
+    {
+        font-size: 12px;
+    }
+    .wing__card_btn_wrapper
+    {
+        display: block;
+    }
+    .wing_card_curator_details
+    {
+        margin-right: 0px;
+    }
+}
+
+
+
+

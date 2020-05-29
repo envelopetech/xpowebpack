@@ -1,0 +1,72 @@
+.column {
+  flex-direction: column;
+}
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;    
+}
+.react_tabs__tab_exhibitor__list {
+  border-bottom: 2px solid #e9e9f0;
+  margin: 1% 0 1%;
+  padding: 0;   
+}
+.react_tabs__tab_exhibitor {
+  display: inline-block;    
+  border-bottom: none;
+  bottom: -1px;    
+  list-style: none;
+  padding: 6px 25px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #808495;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 18px;    
+}
+.react_tabs__tab_exhibitor__selected {        
+  border-bottom: 3px solid #facd49;       
+  color:#5d50c6;
+  text-align: center
+}
+.react_tabs__tab_exhibitor:focus {    
+  border-bottom: 3px solid #facd49;
+  background-color: #edf0f5;
+  color: #000;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .react_tabs__tab_exhibitor__list {
+    border-bottom: 2px solid #e9e9f0;
+    margin: 0% 0 4%;   
+  }
+  .react_tabs__tab_exhibitor {
+    display: inline-block;
+    border-bottom: none;
+    bottom: -1px;
+    list-style: none;
+    padding: 5px 13px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #808495;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 14px;
+  }
+  .react_tabs__tab_exhibitor__selected {        
+    border-bottom: 3px solid #facd49;       
+    color:#5d50c6;
+    text-align: center
+  }  
+  .react_tabs__tab_exhibitor:focus {    
+    border-bottom: 3px solid #facd49;
+    background-color: #edf0f5;
+    color: #000;
+    outline: none;
+  }
+}

@@ -196,7 +196,7 @@ export const auth_social_login = (authData) => {
 };
 
 export const auth = (authData, islogin) => {
-    
+    debugger;
     return dispatch => {
         dispatch(authStart());
         let url = 'xporium/users';
@@ -213,6 +213,7 @@ export const auth = (authData, islogin) => {
         //}
         axios.post(url, authData)
             .then(response => {
+                debugger;
                 if (response.data.error !== undefined) {
                     dispatch(authFail(response.data.error));
                 }

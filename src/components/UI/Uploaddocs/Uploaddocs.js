@@ -5,7 +5,7 @@ import {FilestackType, customPopUp} from '../../../shared/utility';
 import downloadimage from '../../../assets/images/cloud-computing_1cloud-computing.png';
 //import Modal from '../Modal/Modal';
 import Modal from  "react-responsive-modal";//'../../UI/Modal/Modal';
-import 'react-responsive-modal/src/styles.css';
+import 'react-responsive-modal/styles.css';
 
 class  uploaddocs extends React.Component { 
     constructor(props) {

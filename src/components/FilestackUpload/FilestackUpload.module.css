@@ -1,0 +1,171 @@
+.changeimgbtn {    
+    display: block;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 15px;
+    text-align: center;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  .text_span_5 {
+    margin-left: 5px;
+    color: #3b86ff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+  }
+
+
+  .editimgbtn {  
+    /* background-color: transparent;   */
+    background-color: #FF6347;
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px #FF6347;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  .btncoverpic {
+    background-color: #222; 
+  border: none;
+  color: white;
+  padding: 3px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  align-items: center;
+  }
+  
+  .btncoverpic:hover {
+    background-color:#616060;
+  }
+
+  /* .edit_btn {
+    padding: 3px 5px;
+    float: right;
+    font-family: 'Fa solid 900', sans-serif;
+    color: #727272;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+  }*/
+  
+  .color_btn {
+    position: absolute;
+    top: 7%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);      
+    border: none;
+    cursor: pointer; 
+    border-radius: 50%; 
+    z-index: 999;
+    
+  } 
+  .center_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);      
+    border: none;
+    cursor: pointer; 
+    border-radius: 50%;   
+   }
+
+
+   .btn_edit_profile_setup_small
+   {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;   
+    border: none;
+    color: #000;
+   }
+   .btn_edit_profile_setup_small:hover{
+    background-color:#cf527e;
+    color:white;
+    cursor: pointer;
+  }
+
+   .btn_edit_profile_small{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: #e8dcfa;
+    border: none;
+    color:#8e54e9; */
+    /* background-color: #304ffe; */
+    background-color: #304ffe;
+    border: none;
+    color: #fff;
+}
+.btn_edit_profile_small:hover{
+    background-color:#304ffe;
+    color:#304ffe;
+    cursor: pointer;
+  }
+
+
+  .user_profile_streamline_photo{        
+    border: 1px solid #ccc;        
+    color: #222;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-items: center;
+    font-size: 12px;
+  }
+  .user_profile_streamline_photo:hover{    
+    background-color:#222;
+    color: white; 
+  }
+
+   
+  @media (max-width: 991px) {
+    .changeimgbtn {
+        display: block;
+        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        clear: both;
+        text-align: center;
+      }
+  }
+  @media (max-width: 767px) {
+    .changeimgbtn {
+        display: block;
+        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        text-align: center;
+      }
+  }
+  @media (max-width: 479px) {
+
+  }
+
+  /* @font-face {
+    font-family: 'Lora';
+    src: url('../../fonts/Lora-Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  } */
