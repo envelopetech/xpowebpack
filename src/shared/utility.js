@@ -12,8 +12,8 @@ export const updateObject = (oldObject, updatedProperties) => {
         ...updatedProperties
     };
 };
-export const socketendpoint = "http://localhost:3000"
-//export const socketendpoint = "https://xpotest.herokuapp.com"
+//export const socketendpoint = "http://localhost:3000"
+export const socketendpoint = "https://xporiumwebpack.herokuapp.com"
 //export const filestackclientid = "A6UvEfkFeSq2d6TdR9OROz";
 export const filestackclientid = "AsBC0mi3ETPevaVD62Xhwz";
 export const filstackurl = "https://cdn.filestackcontent.com/";
