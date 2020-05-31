@@ -1545,8 +1545,10 @@ h2 {
   }  
 .navbar {
     background-color: transparent;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    /* margin-bottom: 25px;
+    margin-top: 25px; */
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 .brand {
     float: left;
@@ -2563,6 +2565,9 @@ a{
     {
         display: none;
     }
+    .w_container {       
+        margin-bottom: 0.5em;
+      } 
     /* .w_container{
          margin-left: 25px;
          margin-right: 25px;

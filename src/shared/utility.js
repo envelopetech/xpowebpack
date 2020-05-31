@@ -12,8 +12,8 @@ export const updateObject = (oldObject, updatedProperties) => {
         ...updatedProperties
     };
 };
-//export const socketendpoint = "http://localhost:3000"
-export const socketendpoint = "https://xporiumwebpack.herokuapp.com"
+export const socketendpoint = "http://localhost:3000"
+//export const socketendpoint = "https://xporiumwebpack.herokuapp.com"
 //export const filestackclientid = "A6UvEfkFeSq2d6TdR9OROz";
 export const filestackclientid = "AsBC0mi3ETPevaVD62Xhwz";
 export const filstackurl = "https://cdn.filestackcontent.com/";
@@ -662,10 +662,10 @@ export const Userwingstabindex = {
     more: "4",
 }
 export const usermanagetabindex = {
-    wings: "0",
-    exhibitions: "1",
-    enquiries: "2",
-    schedule: "3",
+    wings: "3",
+    exhibitions: "0",
+    enquiries: "1",
+    schedule: "2",
 }
 export const exploreexpotabindex = {
     liveevents: "0",

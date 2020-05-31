@@ -34,7 +34,7 @@ var config = {
       filename: "[name].[hash].css",
       chunkFilename: "[id].[hash].css",
     }),
-    new HtmlWebPackPlugin({      
+    new HtmlWebPackPlugin({
       cache: true,
       template: "public/index.html",
       favicon: 'public/favicon_io/favicon.ico'
@@ -123,6 +123,8 @@ var config = {
     ]
   },
   devServer: {
+    historyApiFallback: true,
+    contentBase: './',
     hot: true,
     port: 4500,
     writeToDisk: true,

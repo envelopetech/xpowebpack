@@ -36,6 +36,7 @@ import Mobilesearch from './containers/mobilesearch/mobilesearch'
 import Events from './containers/events/events'
 import EventProfile from './containers/exhibitionprofile/eventprofile'
 
+
 const history = createBrowserHistory();
 
 class App extends React.Component {
